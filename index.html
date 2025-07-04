@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recipe App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Recipe App</h1>
+    <input type="text" id="search" placeholder="Search recipes..." />
+  </header>
+
+  <nav id="filters">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="biryani">Biryani</button>
+    <button class="filter-btn" data-category="veg">Veg</button>
+    <button class="filter-btn" data-category="non-veg">Non-Veg</button>
+    <button class="filter-btn" data-category="cakes">Cakes</button>
+    <button class="filter-btn" data-category="tiffin">Tiffin</button>
+    <button class="filter-btn" data-category="juices">Juices</button>
+    <button class="filter-btn" data-category="snacks">Snacks</button>
+  </nav>
+
+  <main id="recipe-list"></main>
+
+  <!-- Modal -->
+  <div id="recipe-modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="close-btn">&times;</span>
+      <h2 id="modal-title"></h2>
+      <h3>Ingredients</h3>
+      <ul id="modal-ingredients"></ul>
+      <h3>Instructions</h3>
+      <p id="modal-instructions"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
